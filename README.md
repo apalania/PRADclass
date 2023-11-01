@@ -1,32 +1,32 @@
 
-
-
 # PRADclass: predicting the differentiation and aggressiveness of prostate cancers
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844578.svg)](https://doi.org/10.5281/zenodo.7844578)
 
-[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R, and strictly for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
+[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R and meant for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
 
 ## Confusion Matrix: 
-Setting a prediction probability threshold ~ 0.4, obtains the following confusion matrix for the ternary problem (R/P: Reference (rows) & Predicted (columns); C: Control, I: Indolent, A: Aggressive).
+Setting a prediction probability threshold ~ 0.4 obtains the following multi-class confusion matrix: 
 
-| *R/P* |C  |I  |A  |
+| *Ref/Pred* |C  |I  |A  |
 |:---:|---|---|---|
 | __C__ |3  |0  |0  |
 | __I__ | 2 |82 |16 |
 | __A__ | 1 |3  |14 |
 
-with Prediction probabilities. A balanced accuracy of ~  0.86 was obtained on excluding the inconclusive predictions based on analyzing the prediction probability
+where Reference (ground truth) in rows & Predicted class in columns; C: Control, I: Indolent, A: Aggressive.
+This yields a balanced accuracy of ~  0.86. Instances with prediction probability < 0.4 were deemed ambiguous and not used in constructing the confusion matrix. 
+
 
 PRADclass.R
 ------------
 
     > source PRADclass.R
     
-    1. Requests sample input from user, containing gene expression values of selected biomarkers (for a sample dataset, please see 'Datasets' below).
-    2. Predicts the sample class (benign, indolent, or aggressive) along with the probability of the predicted class. 
-    3. A prediction probability threshold 0f 0.4 is suggested; if the prediction probability is weaker than 0.4, then the predicted class may be unreliable. 
-    4. Provides a command-line interface for [PRADclass](https://apalania.shinyapps.io/PRADclass)
+    * Requests sample input from user, containing gene expression values of selected biomarkers (for a sample dataset, please see 'Datasets' below).
+    * Loads the Random_Forest.rds model object and predicts the sample class (benign, indolent, or aggressive) along with the probability of the predicted class. 
+    * If the prediction probability is weaker than 0.4, then the predicted class is deemed 'Ambiguous'. 
+    * Provides a refined command-line interface for [PRADclass](https://apalania.shinyapps.io/PRADclass).
     
 MODELS
 -------
