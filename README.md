@@ -15,7 +15,7 @@ Setting a prediction probability threshold ~ 0.4 obtains the following multi-cla
 | __A__ | 1 |3  |14 |
 
 where Reference (ground truth) in rows & Predicted class in columns; C: Control, I: Indolent, A: Aggressive.
-This yields a balanced accuracy of ~  0.86. Instances with prediction probability < 0.4 were deemed ambiguous and not used in constructing the confusion matrix. 
+This yields a balanced accuracy of ~  0.86. Instances with prediction probability < 0.4 were deemed ambiguous, and the four such instances were ignored in constructing the confusion matrix. 
 
 
 PRADclass.R
