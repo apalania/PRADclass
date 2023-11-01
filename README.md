@@ -7,13 +7,14 @@
 
 [PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R, and strictly for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
 
-Confusion Matrix
+## Confusion Matrix: 
+Setting a prediction probability threshold ~ 0.4, obtains the following confusion matrix for the ternary problem (R/P: Reference (rows) & Predicted (columns); C: Control, I: Indolent, A: Aggressive).
 
-| R/P |C  |I  |A  |
+| *R/P* |C  |I  |A  |
 |:---:|---|---|---|
-| C |3  |0  |0  |
-| I | 2 |82 |16 |
-| A | 1 |3  |14 |
+| __C__ |3  |0  |0  |
+| __I__ | 2 |82 |16 |
+| __A__ | 1 |3  |14 |
 
 with Prediction probabilities. A balanced accuracy of ~  0.86 was obtained on excluding the inconclusive predictions based on analyzing the prediction probability
 
