@@ -5,7 +5,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844578.svg)](https://doi.org/10.5281/zenodo.7844578)
 
-[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is strictly for academic use; commercial uses require license from the Authors. 
+[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is strictly for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu). 
 
 with Prediction probabilities.
 Confusion Matrix
@@ -51,16 +51,10 @@ We provide the RDS objects of the best-performing models from our work (refer th
 Datasets
 --------
     
-    1. valid-csv: Create's a Picked Model for each of the sklearn classifers stated below:
-        AdaBoostClassifier(),
-        GaussianNB(),
-        KNeighborsClassifier(),
-        DecisionTreeClassifier(),
-        RandomForestClassifier(),
-        MLPClassifier()
-    2. valid_dataset_PredProb.csv
-    
-    
+    1. valid_dataset.csv: File format used as input to PRADclass, both the web-server and command-line tool. Expression values of the biomarkers are provided one sample per line, in a comma-separated format, with a header line indicating the order of the biomarkers. 
+        
+    2. valid_dataset_PredProb.csv: Input file used for validating PRADclass, with samples from DKFZ-PRAD and Suntova et al (please refer our manuscript for details and citation). Provides the predicted class of each sample, concordance with the ground truth, and the probabilitiy of the point prediction. A prediction probability threshold ~0.4 has been applied, highlighting the predictions with weaker confidence.  
+        
 Citation
 ----------
 
