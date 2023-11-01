@@ -25,8 +25,8 @@ PRADclass.R
     
 * Requests sample input from user, containing gene expression values of selected biomarkers (for a sample dataset, please see 'Datasets' below).
 * Loads the Random_Forest.rds model object and predicts the sample class (benign, indolent, or aggressive) along with the probability of the predicted class. 
-- If the prediction probability is weaker than 0.4, then the predicted class is deemed 'Ambiguous'. 
-* Provides a refined command-line interface for: [PRADclass](https://apalania.shinyapps.io/PRADclass) 
+	- If the prediction probability is weaker than 0.4, then the predicted class is deemed 'Ambiguous'. 
+* Provides a refined command-line interface for: [PRADclass](https://apalania.shinyapps.io/PRADclass) webserver.
     
 MODELS
 -------
