@@ -41,9 +41,9 @@ We provide the RDS objects of the best-performing models from our work (refer th
 Datasets
 --------
     
-    1. valid_dataset.csv: File format used as input to PRADclass, both the web-server and command-line tool. Expression values of the biomarkers are provided one sample per line, in a comma-separated format, with a header line indicating the order of the biomarkers. 
+1. valid_dataset.csv: File format used as input to PRADclass, both the web-server and command-line tool. Expression values of the biomarkers are provided one sample per line, in a comma-separated format, with a header line indicating the order of the biomarkers. 
         
-    2. valid_dataset_PredProb.csv: Input file used for validating PRADclass, with samples from DKFZ-PRAD and Suntova et al (please refer our manuscript for details and citation). Provides the predicted class of each sample, concordance with the ground truth, and the probabilitiy of the point prediction. A prediction probability threshold ~0.4 has been applied, highlighting the predictions with weaker confidence.  
+2. valid_dataset_PredProb.csv: Input file used for validating PRADclass, with samples from DKFZ-PRAD and Suntova et al (please refer our manuscript for details and citation). Provides the predicted class of each sample, concordance with the ground truth, and the probabilitiy of the point prediction. A prediction probability threshold ~0.4 has been applied, highlighting the four predictions with weak evidence.  
         
 Citation
 ----------
