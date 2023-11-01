@@ -5,28 +5,17 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844578.svg)](https://doi.org/10.5281/zenodo.7844578)
 
-[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is strictly for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu). 
+[PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R, and strictly for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
 
-with Prediction probabilities.
 Confusion Matrix
-Predicted
-Aggressive 
-Control 
-Indolent
-Reference
-Aggressive 
-14
-1
-3
-Control 
-0
-3
-0
-Indolent
-16
-2
-82
-A balanced accuracy of ~  0.86 was obtained on excluding the inconclusive predictions based on analyzing the prediction probability
+|   Predicted	|
+|---|---|---|---|
+|   |C  |I  |A  |
+| C |3  |0  |0  |
+| I | 2 |82 |16 |
+| A | 1 |3  |14 |
+
+with Prediction probabilities. A balanced accuracy of ~  0.86 was obtained on excluding the inconclusive predictions based on analyzing the prediction probability
 
 PRADclass.R
 ------------
