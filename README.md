@@ -9,9 +9,7 @@
 
 Confusion Matrix
 
-|   Predicted	|
-|------|
-|   |C  |I  |A  |
+| R/P |C  |I  |A  |
 |---|---|---|---|
 | C |3  |0  |0  |
 | I | 2 |82 |16 |
