@@ -5,7 +5,7 @@
 
 [PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R and meant for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
 
-## Confusion Matrix: 
+### Confusion Matrix: 
 Setting a prediction probability threshold ~ 0.4 obtains the following multi-class confusion matrix: 
 
 | *Ref/Pred* |C  |I  |A  |
@@ -28,7 +28,7 @@ PRADclass.R
 	- If the prediction probability is weaker than 0.4, then the predicted class is deemed 'Ambiguous'. 
 * Provides a refined command-line interface for: [PRADclass](https://apalania.shinyapps.io/PRADclass) webserver.
     
-MODELS
+Models
 -------
 
 We provide the RDS objects of the best-performing models from our work (refer the Citation). These could be used in an Ensemble Classifier model for academic purposes.
