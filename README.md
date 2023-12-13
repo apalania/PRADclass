@@ -1,6 +1,7 @@
 
 # PRADclass: predicting the differentiation and aggressiveness of prostate cancers
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844579.svg)](https://doi.org/10.5281/zenodo.7844579)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844578.svg)](https://doi.org/10.5281/zenodo.7844578)
 
 [PRADclass](https://apalania.shinyapps.io/PRADclass) is a web-server / standalone tool providing a model for predicting the differentiation and aggressiveness of prostate cancers based on gene expression data of select biomarkers. PRADclass is written in R and meant for academic use; commercial uses require license from the Authors ([Dr Ashok Palaniappan](mailto:apalania@scbt.sastra.edu)). 
