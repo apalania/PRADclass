@@ -48,7 +48,7 @@ Datasets
 Citation
 ----------
 
-Please cite and support us!
+Please cite us!
 
 Balraj AS*, Muthamilselvan S*, Raaja R, Palaniappan A. (2023) PRADclass: Hybrid Gleason grade-informed computational strategy identifies consensus biomarker features of prostate adenocarcinoma that predict aggressive cancer. Technology in Cancer Research and Treatment (accepted); doi: 10.1177/15330338231222389
 
