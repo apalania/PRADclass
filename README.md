@@ -35,7 +35,7 @@ We provide the RDS objects of the best-performing models from our work (refer th
 	
     1. Random_Forest.rds: The Random Forest model built on the full TCGA PRAD dataset that is at the heart of [PRADclass](https://apalania.shinyapps.io/PRADclass)
     2. XGBoost.rds: One of the other best-performing models based on XGBoost (refer the Citation)
-    3. SVM_radial.rds: One of the other best-performing models; these could be used in an e 
+    3. SVM_radial.rds: One of the other best-performing models; these could be used in constructing an ensemble model.  
 
 
 Datasets
