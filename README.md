@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7844579.svg)](https://doi.org/10.5281/zenodo.7844579)
-!(https://img.shields.io/badge/licence-MIT-blue)
+![](https://img.shields.io/badge/licence-MIT-blue)
 
 # PRADclass: predicting the differentiation and aggressiveness of prostate cancers
 
